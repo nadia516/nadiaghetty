@@ -248,8 +248,8 @@
     transform: translate(-50%, -50%);
     background: radial-gradient(
       ellipse at center,
-      color-mix(in srgb, var(--accent) 34%, transparent) 0%,
-      color-mix(in srgb, var(--accent) 15%, transparent) 36%,
+      rgba(160, 160, 160, 0.2) 0%,
+      rgba(160, 160, 160, 0.08) 36%,
       transparent 66%
     );
     filter: blur(48px);
@@ -271,7 +271,7 @@
     object-position: center bottom;
   }
   /* photo treatments */
-  .hero-photo[data-treatment="bw"] img { filter: grayscale(1) contrast(1.05); }
+  .hero-photo[data-treatment="bw"] img { filter: grayscale(1) contrast(1.08) brightness(1.02); }
   .hero-photo[data-treatment="duotone"] img {
     filter: grayscale(1) contrast(1.1) brightness(0.95);
   }
